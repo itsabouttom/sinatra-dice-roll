@@ -37,7 +37,7 @@ get ("/dice/1/20") do
   <p>#{outcome}</p>"
 end
 
-get("dice/5/4") do
+get("/dice/5/4") do
   first_die = rand(1..4)
   second_die = rand(1..4)
   third_die = rand(1..4)
@@ -45,7 +45,7 @@ get("dice/5/4") do
   fifth_die = rand(1..4)
   sum = first_die + second_die + third_die + fourth_die + fifth_die
 
-  outcome = "You rolled a #{first_die}, a #{second_die}, a #{third_die}, a #{fourth_die}, and a #{fifth_die} for a total of #{sum}"
+  outcome = "You rolled a #{first_die}, and a #{second_die}, and a #{third_die}, and a #{fourth_die}, and a #{fifth_die} for a total of #{sum}"
 
   "<h1>5d4</h1>
   <p>#{outcome}</p>"
